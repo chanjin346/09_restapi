@@ -1,0 +1,29 @@
+### 2-1. 모든 유저 조회
+
+GET {{baseUrl}}/entity/users
+
+### 2-2. 유저 조회
+GET {{baseUrl}}/entity/users/6
+
+### 2-3. 유저 등록
+POST {{baseUrl}}/entity/users
+Content-Type: application/json ### 요청 시, 전달하는 데이터의 TYPE 명시
+
+{
+  "id":"user10",
+  "pwd":"pass10",
+  "name":"강감찬"
+}
+
+### 2-4. 유저 수정
+PUT {{baseUrl}}/entity/users/4
+
+{
+  "id":"user05",
+  "pwd":"pass05",
+  "name":"강감찬"
+}
+
+### 2-5. 유저 삭제
+DELETE {{baseUrl}}/entity/users/5
+

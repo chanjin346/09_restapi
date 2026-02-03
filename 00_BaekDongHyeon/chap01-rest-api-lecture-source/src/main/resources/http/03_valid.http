@@ -1,0 +1,13 @@
+### 3-1. 사용자 정의 예외 발생 테스트
+GET {{baseUrl}}/valid/users/1
+
+
+### 3-2. 사용자 추가 시 유효성 검사 테스트
+POST {{baseUrl}}/valid/users
+Content-Type: application/json
+
+{
+  "id" : "123123",
+  "pwd": "123456789",
+  "name": "김"
+}

@@ -1,0 +1,31 @@
+### 2-1. 모든 유저 조회
+GET {{baseUrl}}/entity/users
+
+### 2-2. 특정 유저 조회
+GET {{baseUrl}}/entity/user/1
+
+### 2-2. 특정 유저 조회_오류(404가 뜨는게 좋음)
+GET {{baseUrl}}/entity/user/8
+
+### 2-3. 유저 등록
+POST {{baseUrl}}/entity/users
+Content-Type: application/json ### 요청 시 전달하는 데이터의 타입 명시
+
+{
+  "id": "user04",
+  "pwd": "pass04",
+  "name": "고파유"
+}
+
+### 2-4. 유저 수정
+PUT {{baseUrl}}/entity/users/4
+Content-Type: application/json ### 요청 시 전달하는 데이터의 타입 명시
+
+{
+  "id": "user04",
+  "pwd": "pass04",
+  "name": "고파유"
+}
+
+### 2-5. 유저 삭제
+DELETE {{baseUrl}}/entity/users/3

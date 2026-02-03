@@ -1,0 +1,14 @@
+### 주석
+
+### 1-1. 문자열 응답
+GET localhost:8080/response/hello
+
+### 1-2. Object 응답
+GET localhost:8080/response/message
+
+### 1-3. List 응답
+GET localhost:8080/response/list
+
+### 1-4. Map 응답
+GET {{baseUrl}}/response/map
+
