@@ -1,0 +1,2 @@
+## 4-1 응답 결과 조회 테스트 (사용자 + 링크)
+GET {{baseUrl}}/hateoas/users
