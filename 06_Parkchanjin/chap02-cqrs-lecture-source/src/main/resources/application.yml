@@ -1,0 +1,23 @@
+# Spring Profile
+# active? ??? ??? ??
+# ???? ?? ? application-{active}.yml ??? ??? ??
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: mappers/**/*.xml
+  type-aliases-package: com.google.cqrs.product.query.dto
+
+#spring:
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://{ip}:{prot}/{database}
+#    username: {user}
+#    password: {password}
+#
+#image:
+#  image-dir: {??? ?? ?? ??}
+#  image-url: {??? ?? ?? URL}
